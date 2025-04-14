@@ -9,7 +9,6 @@ from rhvoice_wrapper import TTS
 import json
 
 # === Настройки ===
-bot_name = "зара"  # или "алекс", "ассистент" и т.п.
 model = Model("vosk")
 rec = KaldiRecognizer(model, 16000)
 
@@ -53,6 +52,7 @@ def speak(text):
 async def process_voice_command(text, config):
     global chat_history
     system_message = config['system_message']
+    bot_name = config['bot_name']
     # Удаляем имя бота из текста
     user_input = text.lower().replace(bot_name, "", 1).strip()
 
