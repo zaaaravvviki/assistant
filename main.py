@@ -1,5 +1,4 @@
 import asyncio
-import json
 import pyaudio
 from vosk import Model, KaldiRecognizer
 import g4f
