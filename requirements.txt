@@ -1,0 +1,6 @@
+asyncio
+pyaudio
+vosk
+g4f
+pydub
+rhvoice-wrapper
